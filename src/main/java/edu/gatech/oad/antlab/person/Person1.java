@@ -30,18 +30,9 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  Array chars[] = input.toCharArray();
-      String rotated = "";
-      for (int i = input.length(); i >= 0; i--) {
-          if (i == 1) {
-              rotated = rotated + chars[0];
-          } else if (i == 0) {
-              rotated = rotated + chars[1];
-          } else {
-              rotated = chars[i] + rotated;
-          }
-      }
-	  return rotated;
+	  String firstTwoLetters = input.subString(0, 2);
+      String rest = input.subString(2);
+	  return rest + firstTwoLetters;
 	}
 
 	/**
