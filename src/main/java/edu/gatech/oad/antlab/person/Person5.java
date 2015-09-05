@@ -33,7 +33,7 @@ public class Person5 {
 	  //Person 5 put your implementation here
       String begin = input.substring(0, 2);
       String last = input.substring(2);
-      String output = begin + last;
+      String output = last + begin;
       return output;
 	}
 
