@@ -1,1 +1,1 @@
-apply plugins: 'java'
+apply plugin: 'java'
